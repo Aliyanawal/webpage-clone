@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freston Analytics</title>
+  <style>/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(#0e0022, #0a0018);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+header img{
+    width: 300px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo .highlight {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.nav-links a {
+  margin: 0 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+.nav-links a:hover::after {
+  content: "";
+  height: 2px;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.svg'); /* Optional: add wireframe background */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  max-width: 900px;
+  margin: 20px 0;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 16px 0;
+}
+.icon.top {
+  margin-bottom: 30px;
+  
+   animation: spin 5s linear infinite;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.icon.top {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbitTop 4s linear infinite;
+}
+
+.icon.bottom {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  animation: orbitBottom 4s linear infinite;
+}
+
+@keyframes orbitTop {
+  from {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+@keyframes orbitBottom {
+  from {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.products-section {
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product.left img,
+.product.right img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.product.left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product.right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+</style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Freston Analytics Logo" />
+      
+    </div>
+    <nav class="nav-links">
+      <a href="#">WHO WE ARE</a>
+      <a href="#">SERVICES</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">INDUSTRIES</a>
+      <a href="#">LET'S CONNECT</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="./product1.png" alt="Dot Icon" class="icon top" />
+    <h1>"Experience the Future of Technology with <br> Our Digital Products"</h1>
+    <p>Trust us, we got everything you need to <br> tune up your money</p>
+    <img src="product1.png" alt="Dot Icon" class="icon bottom" />
+  </section>
+
+  <section class="products-section">
+  <div class="product-container">
+    <div class="product left">
+      <img src="./nexus.png" alt="Web App Screenshot" />
+    </div>
+    <div class="product right">
+      <img src="./process manager.jpg" alt="Mobile App 1" />
+      
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
