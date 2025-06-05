@@ -189,21 +189,113 @@ header img{
   align-items: center;
 }
 
+.footer {
+  background-color: #3a2755;
+  color: #ffffff;
+  padding: 60px 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-logo img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-bottom: 30px;
+}
+
+.footer-social a {
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+.footer-line {
+  width: 110px;
+  height: 5px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="Freston Analytics Logo" />
+       <div class="logo"><a href="./index.html"><img src="./logo.png"></a></div>
       
     </div>
     <nav class="nav-links">
       <a href="#">WHO WE ARE</a>
-      <a href="#">SERVICES</a>
+      <a href="./services.html">SERVICES</a>
       <a href="#">PRODUCTS</a>
       <a href="#">INDUSTRIES</a>
-      <a href="#">LET'S CONNECT</a>
+      <a href="./contact.html">LET'S CONNECT</a>
     </nav>
   </header>
 
@@ -226,6 +318,57 @@ header img{
     </div>
   </div>
 </section>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="logo.png" alt="Freston Analytics Logo" />
+    </div>
+
+    <!-- Footer Columns -->
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>OUR SERVICE</h4>
+        <ul>
+          <li>Digital Transformation Services</li>
+          <li>Managed IT Service</li>
+          <li>Cloud Service</li>
+          <li>Annual Maintenance Service</li>
+          <li>Resource Augmentation</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>JOIN US</h4>
+        <ul>
+          <li>Career</li>
+          <li>ProSEED</li>
+          <li>Life @ Freston</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer-bottom">
+      <div class="footer-line"></div>
+      <p>© 2025 Freston Analytics. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">GDPR</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

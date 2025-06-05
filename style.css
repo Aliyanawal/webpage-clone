@@ -244,7 +244,7 @@ nav ul li a:hover {
   background: orangered;
 }
 
-/* Footer Styling */
+/* Footer Styling 
 .footer {
   background-color: #3a2755;
   color: #ffffff;
@@ -336,4 +336,115 @@ nav ul li a:hover {
 
 .footer-links a:hover {
   text-decoration: underline;
+}*/
+.freston-footer {
+  background-color: #382349;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 40px 20px;
 }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 250px;
+  max-width: 100%;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.divider-line {
+  width: 120px;
+  height: 6px;
+  background-color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  margin-right: 20px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff9900;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: white;
+}
+
