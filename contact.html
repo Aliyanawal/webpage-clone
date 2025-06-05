@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Connect</title>
+  
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;;
+}
+
+.logo span {
+  color: #bbbbbb;
+}
+
+header img{
+  width: 300px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff8000;
+}
+
+.contact-section {
+   
+  display: flex;
+  justify-content: space-between;
+  padding: 150px ;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 50%;
+  
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-form h2 .orange {
+  color: #ff6f00;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #333;
+  margin-top: 2px;
+ 
+}
+
+form input
+{
+  width: 90%;
+  margin-bottom: 40px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ff6f00;
+}
+
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-image {
+ 
+  flex: 1;
+   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 45%;
+  padding-left: 0;
+ 
+ 
+  
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  margin-right: 5px;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.cta-button {
+  background: linear-gradient(45deg, orange, orangered);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+</style>
+</head>
+<body>
+  <header>
+     <div class="logo"><a href="./index.html"><img src="./logo2.png"></a></div>
+    <nav>
+      <ul>
+        <li><a href="#">WHO WE ARE</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./products.html">PRODUCTS</a></li>
+        <li><a href="#">INDUSTRIES</a></li>
+        <li><a href="./contact.html">LET'S CONNECT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-form">
+      <h2><span class="orange">Let's Connect</span> and Grow</h2>
+      <p>Please fill out the form below to get in touch with us.</p>
+      <form>
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="tel" placeholder="Phone number" />
+        <input type="text" placeholder="Tell us about your requirements"></input><br>
+        <a href="#" class="cta-button">CONNECT <span>→</span></a>
+      </form>
+    </div>
+    <div class="contact-image">
+      <img src="./letsconnect.png" alt="Hands Digital" />
+    </div> 
+  </section>
+</body>
+</html>

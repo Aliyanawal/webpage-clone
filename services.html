@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freston Analytics - Services</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.hero-section {
+ background: url('./bg.webp') no-repeat center center/cover;
+  height: 90vh;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header nav img{
+    width: 200px;
+    height: 10px;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+   background-color: rgba(0, 0, 0, 0.5); /* dimming effect */
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero-content {
+  position: relative;
+  background: url('images/office-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dimming effect */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hero-content h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="hero-section">
+    <nav class="navbar">
+      <a href="./index.html"><img src="logo.png" alt="Freston Analytics" class="logo" /></a>
+      <ul class="nav-links">
+        <li><a href="#">WHO WE ARE</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="./products.html">PRODUCTS</a></li>
+        <li><a href="#">INDUSTRIES</a></li>
+        <li><a href="./contact.html">LET’S CONNECT</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Our Services:</h1>
+    <h2>Providing Solutions for Your Needs</h2>
+    <p>From strategy to execution, we help you achieve success</p>
+  </div>
+</div>
+
+  </header>
+
+</body>
+</html>
